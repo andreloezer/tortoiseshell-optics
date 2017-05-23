@@ -1,0 +1,53 @@
+
+/*  ROOT Element*/
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+
+/*  FOOTER*/
+
+footer {
+  color: white;
+  background-color: cadetblue;
+
+  width: 960px;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer figure {
+  /*margin-left: 2rem;*/
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  width: auto;
+}
+
+footer figcaption {
+  font-size: 1rem;
+
+  margin-left: 1rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer li {
+  margin-left: 2rem;
+}
