@@ -1,17 +1,54 @@
 
+
 /*  ROOT Element*/
 
 html {
   font-size: 18px;
   font-family: Helvetica;
-  line-height: 1.4rem;
+}
+
+
+/*  Classes*/
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.spaced {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
 }
 
 
 /*  MAIN*/
 
 main {
+  line-height: 1.4rem;
+}
 
+/*  LOGO (HEADER and FOOTER)*/
+
+header img,
+footer img {
+  height: 1.5rem;
+  width: auto;
+}
+
+header figcaption,
+footer figcaption {
+  font-size: 1rem;
+
+  margin-left: 1rem;
+}
+
+header li {
+  margin-left: 2rem;
 }
 
 /*  Intro section*/
@@ -24,62 +61,19 @@ main {
   background-size: cover;
 
   height: 30rem;
-
-  justify-content: flex-end;
-}
-
-.container {
-  width: 960px;
-  margin: auto;
 }
 
 header {
   color: white;
   background-color: cadetblue;
 
-  left: 0;
-  right: 0;
-
   position: relative;
   top: 1rem;
   padding: 1rem 2rem;
   z-index: 5;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header figure {
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header img {
-  height: 1.5rem;
-  width: auto;
-}
-
-header figcaption {
-  font-size: 1rem;
-
-  margin-left: 1rem;
-}
-
-header ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header li {
-  margin-left: 2rem;
 }
 
 #title-parent {
-  display: flex;
   justify-content: flex-end;
 }
 
@@ -90,34 +84,21 @@ header li {
   top: 10rem;
   right: -2rem;
   padding: 1.5rem 5rem;
-  display: inline-block;
-  margin-left: auto;
 }
 
 h1 {
-  text-align: center;
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
-
-  display: inline-block;
 }
 
 /*  Figures section*/
 
-#figures {
-  /*padding-top: 3rem;*/
-  display: flex;
-  justify-content: center;
-}
-
 #figures figure{
   margin: 3rem;
   height: 8rem;
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 #figures div {
@@ -125,37 +106,17 @@ h1 {
   margin-top: 0;
 }
 
-#figures img {
-  margin: auto;
-}
-
 #figures figcaption {
-  /*font-size: 1rem;*/
-  /*width: 6rem;*/
   text-align: center;
-  line-height: 1.4rem;
-}
-
-#paper,
-#ruler,
-#truck {
-  display: flex;
-  align-items: flex-start;
 }
 
 #paper img {
   width: 3.5rem;
-  height: auto;
 }
 
-#ruler img {
-  width: 5rem;
-  height: auto;
-}
-
+#ruler img,
 #truck img {
   width: 5rem;
-  height: auto;
 }
 
 /*  Info section*/
@@ -164,7 +125,6 @@ h1 {
   margin-top: 3rem;
   margin-bottom: 5rem;
 
-  display: flex;
   justify-content: center;
 }
 
@@ -174,9 +134,10 @@ h1 {
 }
 
 #info div div {
-  width: 10rem;
   background-color: cadetblue;
   color: white;
+
+  width: 10rem;
   padding: 0.5rem 1.25rem;
 }
 
@@ -186,7 +147,6 @@ h1 {
 }
 
 #info p {
-  line-height: 1.4rem;
   margin-top: 1rem;
 }
 
@@ -194,28 +154,10 @@ h1 {
 /*  FOOTER*/
 
 footer {
-  /*margin-top: 5rem;*/
   background-color: azure;
   color: black;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 footer figure {
   margin: 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-
-footer img {
-height: 1.5rem;
-width: auto;
-}
-
-footer figcaption {
-font-size: 1rem;
-
-margin-left: 1rem;
