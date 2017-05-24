@@ -73,6 +73,10 @@ header {
   z-index: 5;
 }
 
+header p {
+  display: none;
+}
+
 #title-parent {
   justify-content: flex-end;
 }
@@ -160,4 +164,96 @@ footer {
 
 footer figure {
   margin: 4rem;
+}
+
+
+/*  Medias Query*/
+
+/*  Width between 1024px and 768px*/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    top: 0;
+  }
+  #intro {
+    height: 22rem;
+  }
+
+  #title {
+    top: 5rem;
+    padding: 0.75rem 4rem;
+    right: 4rem;
+  }
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+/*  Width 768px and bellow*/
+@media screen and (max-width: 768px) {
+  header figcaption {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+  header p {
+    display: inline;
+  }
+  #intro {
+    background-position: 20%;
+    height: 17rem;
+  }
+  #title {
+    top: 9rem;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  #figures {
+    flex-direction: column;
+    padding: 3.77rem 0;
+  }
+  #figures figure {
+    margin: 0;
+  }
+  #figures figcaption {
+    font-size: 0.77rem;
+    margin-bottom: 1.54rem;
+  }
+  #truck figcaption {
+    margin-bottom: 0;
+  }
+  #info {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+  #info > div {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+  #info div div {
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  #info p {
+    padding-left: 0.4rem;
+    font-size: 0.77rem;
+    margin-bottom: 4rem;
+  }
+  #footer {
+    justify-content: center;
+  }
+  footer figcaption {
+    display: none;
+  }
 }
